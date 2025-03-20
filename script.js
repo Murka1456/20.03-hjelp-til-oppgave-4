@@ -20,9 +20,28 @@ todoList.appendChild(todoItem);
 
 // /steg1 lage element til slet knappen
 const deleteButton = document.createElement("button");
-// /gi slett knappen text innhold
+// /gi slett  knappen text innhold
 deleteButton.textContent = "Slett";
 // /leg slett knapen til gjøremål
 todoItem.appendChild(deleteButton);
+// /staeg 4 slettknapp kan bli  trykk på , så må vi bruke variabelappend
+deleteButton.addEventListener("click",function(){
+  console.log("slett knapp er trykket!");
+  // /steg 5 slett gjøremål fra listen
+  todoItem.remove();
+});
+
+
+const finishButton =document.createElement("button");
+finishButton.textContent="Ferdig"
+todoItem.appendChild(finishButton);
+finishButton.addEventListener("click",function(){
+ console.log("finish knapp er trykket!");
+//  /Steg 5
+todoItem.classList.add("finished");
+
+})
+
+
 
 }); 

@@ -46,3 +46,6 @@ footer {
   display: flex;
   justify-content: center;
 }
+.finished {
+text-decoration: line-through;
+}
