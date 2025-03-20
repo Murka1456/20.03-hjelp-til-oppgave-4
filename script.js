@@ -39,7 +39,9 @@ finishButton.addEventListener("click",function(){
  console.log("finish knapp er trykket!");
 //  /Steg 5 gir gjøremål en klasse med stylling
 todoItem.classList.add("finished");
+// /Steg 6 tøm userinnput
 
+document.querySelector("#userInput").value = "";
 })
 
 
