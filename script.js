@@ -18,8 +18,11 @@ todoItem.textContent = userInput;
 
 todoList.appendChild(todoItem);
 
-
+// /steg1 lage element til slet knappen
 const deleteButton = document.createElement("button");
+// /gi slett knappen text innhold
 deleteButton.textContent = "Slett";
+// /leg slett knapen til gjøremål
 todoItem.appendChild(deleteButton);
+
 }); 
