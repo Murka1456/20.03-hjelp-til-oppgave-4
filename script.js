@@ -18,4 +18,8 @@ todoItem.textContent = userInput;
 
 todoList.appendChild(todoItem);
 
+
+const deleteButton = document.createElement("button");
+deleteButton.textContent = "Slett";
+todoItem.appendChild(deleteButton);
 }); 
